@@ -98,16 +98,17 @@ a {
     border: 2px solid #0e131a;
 }
 
+.two-image,
 .box {
     border: 3px solid #3882f6;
     border-radius: 25px;
     aspect-ratio: 1 / 1;
     margin-bottom: 10px;
+    width: 200px;
 }
 
 .two-container {
-    width: 200px;
-
+    max-width: 200px;
 }
 
 .two-text {
