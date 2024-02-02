@@ -1,25 +1,18 @@
-@font-face {
-    font-family: roboto;
-    src: url(Roboto-Regular.ttf);
-}
-
-@font-face {
-    font-family: roboto-bold;
-    src: url(Roboto-Bold.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
-    font-family: roboto;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     box-sizing: border-box;
-    height: 100vh;
 }
 
 ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.header a {
+a {
     font-size: 18px;
     color: #e5e7eb;
     text-decoration: none;
@@ -28,14 +21,19 @@ ul {
 .hero-secondary-text {
     font-size: 18px;
     color: #e5e7eb;
+    margin-bottom: 10px;
 }
 
 .signup button {
     background-color: #3882f6;
     color: white;
-    border: none;
     border-radius: 5px;
     font-size: 18px;
+    padding: 8px 30px;
+}
+
+#no-border {
+    border: none;
 }
 
 .weewoo {
@@ -45,24 +43,27 @@ ul {
 
 .weewoo,
 .hero-text {
-    font-family: roboto-bold;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 
 .hero-text {
     font-size: 48px;
     color: #F9FAF8;
-    font-weight: bold;
 }
 
-/* style up, formatting below */
-
-.section-one {
+.dark-blue-bg {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 50px;
-    padding-top: 20px;
     background: #1F2937;
+}
+
+.section-one {
+    display: flex;
+    max-width: 1220px;
+    padding: 120px 0px;
+    flex-wrap: wrap;
 }
 
 .header {
@@ -70,29 +71,142 @@ ul {
     align-items: center;
     justify-content: space-between;
     gap: 10px;
+    width: 1220px;
+    padding-top: 20px;
 }
 
 .links {
     display: flex;
-}
-
-.stuff {
-    display: flex;
-    justify-content: center;
+    gap: 40px;
 }
 
 .sc-one-text {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+    gap: 10px;
 }
 
 .img-container {
     flex: 1;
-    display: flex;
 }
 
 .image {
-    height: 300px;
-    width: auto;
+    height: auto;
+    width: 610px;
     border: 2px solid #0e131a;
-    flex: 1;
+}
+
+.box {
+    border: 3px solid #3882f6;
+    border-radius: 25px;
+    aspect-ratio: 1 / 1;
+    margin-bottom: 10px;
+}
+
+.two-container {
+    width: 200px;
+
+}
+
+.two-text {
+    text-align: center;
+}
+
+.section-two {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+
+.two-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+    margin: 50px 0px;
+}
+
+.section-three {
+    background-color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 0px;
+}
+
+.quote {
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.quote-credit {
+   color: #1F2937;
+   font-size: 24px;
+   font-weight: bold;
+   margin-left: auto;
+   padding-right: 20px;
+}
+
+.three-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    gap: 20px;
+}
+
+.section-four {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+}
+
+.signup-box {
+    width: 1220px;
+    background-color: #3882f6;
+    border-radius: 10px;
+    display: flex;
+    padding: 50px 100px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.aawagga {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.four-title {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+.four-text {
+    font-size: 18px;
+    color: white;
+}
+
+#white-border {
+    border: 2px white solid;
+}
+
+.footer {
+    background-color: #1F2937;
+    padding: 30px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-text {
+    color: #F9FAF8;
 }
